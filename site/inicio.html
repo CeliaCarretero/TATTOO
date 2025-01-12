@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+     <title>EN SU TINTA</title>
+     <meta charset="utf-8">
+     <meta name = "format-detection" content = "telephone=no" />
+     <link rel="icon" href="images/favicon.png" type="image/x-icon">
+     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+     <script src="js/jquery.js"></script>
+     <script src="js/jquery-migrate-1.1.1.js"></script>
+     <script src="js/jquery.easing.1.3.js"></script>
+	 <script src="js/script.js"></script>
+     <script src="js/superfish.js"></script>
+     <script src="js/jquery.mobilemenu.js"></script>
+     <script src="js/jquery.animate-colors-min.js"></script>
+     <script src="js/camera.js"></script>
+     <script src="js/jquery.ui.totop.js"></script>
+     <script src="js/sForm.js"></script>
+     <!--[if (gt IE 9)|!(IE)]><!-->
+         <script src="js/jquery.mobile.customized.min.js"></script>
+    <!--<![endif]--> 
+     <!-- font-awesome font -->
+    <link rel="stylesheet" href="fonts/font-awesome.css" type="text/css" media="screen">
+    <!-- end font-awesome font -->
+      <script>
+        jQuery
+        $(window).load(function(){
+            jQuery('#camera').camera({
+
+                loader: true,
+                pagination: false,
+                thumbnails: false,
+                transPeriod: 2000, 
+                height: '39.9%',
+                caption: false,
+                navigation: false,
+                fx: 'simpleFade',
+                autoAdvance: true
+
+            });
+
+            $('.block_1 .button1').hover(function()
+                {
+                    $(this).parent().find('.block_num').animate({'color':'#fff'});
+                    $(this).parent().find('h5').animate({'color':'#eada51'});
+                    $(this).parent().find('p').animate({'color':'#fff'});          
+                }, function(){
+                    $(this).parent().find('.block_num').animate({'color':'#4c4b4b'});
+                    $(this).parent().find('h5').animate({'color':'#fff'});
+                    $(this).parent().find('p').animate({'color':'#4c4b4b'});
+                });
+
+             $('.block_3 .button1').hover(function()
+                {
+                    $(this).parent().find('.block_letter').animate({'color':'#fff'});
+                    $(this).parent().parent().find('.icon').animate({'backgroundColor':'#eada51'});
+                    $(this).parent().parent().find('.icon div').animate({'color':'#fff'});          
+                }, function(){
+                    $(this).parent().find('.block_letter').animate({'color':'#4c4b4b'});
+                    $(this).parent().parent().find('.icon').animate({'backgroundColor':'#1f1f1f'});
+                    $(this).parent().parent().find('.icon div').animate({'color':'#4c4b4b'});
+                })
+
+        });     
+        jQuery(function(){
+            $().UItoTop({ easingType: 'easeOutQuart' });
+            $(".top_arr").click(function(){
+                $('body, html').stop().animate({'scrollTop': 0}); 
+            });
+        });     
+    </script>
+     <!--<![endif]-->
+     <!--[if lt IE 8]>
+       <div style=' clear: both; text-align:center; position: relative;'>
+         <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+           <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+         </a>
+      </div>
+    <![endif]-->
+    <!--[if lt IE 9]>
+   		<script src="js/html5shiv.js"></script>
+    	<link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+    <![endif]-->
+     </head>
+     <body>
+<!--==============================header=================================-->
+<header>
+    <div class="slider_box">
+        <div class="camera_wrap camera_azure_skin" id="camera">        
+            <div data-src="images/principalstudio1.jpg">
+                <div class="camera_caption fadeIn">
+                </div>
+            </div>
+            <div data-src="images/principalstudio2.jpg">
+                <div class="camera_caption fadeIn">
+                </div>
+            </div>
+            <div data-src="images/principalstudio3.jpg">
+                <div class="camera_caption fadeIn">
+                </div>
+            </div>            
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4 logo-holder">
+     <div class="logo">
+         <a href="index.php">
+             <center><img src="images/logo1.png" alt=" " class="img-responsive"/>
+         </a></center>
+     </div>      
+ </div>
+<div class="logoHolder">
+            <div class="container_12">
+                <div class="grid_12 text_center marg_1">
+                    <h1><a class="nombre" href="index.html"><img src="images/nombreindex.png" alt=""></a> </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container_12">
+        <div class="grid_12">
+            <div class="menuHolder">
+                <nav>
+                    <ul class="sf-menu">
+                        <li class="current"><a href="inicio.html">Inicio</a></li>
+                        <li><a href="about.html">Sobre Nosotros</a>
+                        </li>
+                        <li><a href="formulario.html">Citas</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+<!--=======content================================-->
+<section id="content">
+    <div class="container_12">
+        <div class="grid_4">
+            <div class="block_1">
+                <div class="block_num">
+                </div>
+                <h4>Artistas</h4>
+                <h5>Locales y guests<br></h5>
+                <p>Disfruta de nuestros tatuadores residentes   <br> y también de invitados internacionales <br>para lucir una pieza de tu artista favorito.</p>
+            </div>
+        </div>
+        <div class="grid_4">
+            <div class="block_1">
+                <div class="block_num">
+                </div>
+                <h4>Piercing</h4>
+                <h5>Piercing  <br> y BodyMod </h5>
+                <p>Hazte un piercing o microdermal<br> o atrévete con<br>escarificaciones y bodymod </p>
+            </div>
+        </div>
+        <div class="grid_4">
+            <div class="block_1">
+                <div class="block_num">
+                </div>
+                <h4>Tienda</h4>
+                <h5>Todo lo que necesitas <br>para tu tattoo f</h5>
+                <p>Cremas y tratamientos  <br>para el cuidado de tatuajes. <br>Piezas de joyería piercing a la última </p>
+            </div>
+        </div>
+        <div class="grid_12">
+            <hr>
+        </div>
+    </div>
+   <div class="container_12">
+        <div class="grid_12">
+            <div class="block_2">
+    </div>
+<div class="container_12">
+        <div class="grid_12">
+            <div class="block_2">
+                <img src="images/balm.jpg" alt="">
+                <div class="txt_info">
+                    <h2>Tatuajes<br>para<br>siempre</h2>
+                    <p>Disponemos de toda la gama de productos Balm Tattoo de delab.<br>Una marca con alta presencia en convenciones de tatuajes<br>que garantiza un cuidado óptimo en la curación <br>y para toda la vida de tu tattoo. </p>
+                    <a class="button1" href="https://balmtattoo.com/es/">Web oficial</a>
+                </div>
+
+            </div>
+            <hr><h3 class="marg_5 corr_01">Nuestros residentes</h3>
+        </div>
+        <div class="clearfix"></div>
+        <div class="grid_3">
+            <div class="block_4">
+                <img src="images/tatuadora1.jpg" alt="">
+                <h5><a class="link_1 animate">Esther Vera</a></h5>
+                <p>Especialista en realismo y blackwork <br> Con más de 10 años de experiencia <br> y guests internacionales</p>
+            </div>
+        </div>
+        <div class="grid_3">
+            <div class="block_4">
+                <img src="images/piercer1.jpg" alt="">
+                <h5><a class="link_1 animate">Manuel Acosta</a></h5>
+                <p>Piercer y experto en bodymod. <br> Formadoen EE.UU y enfermero titulado para realizar <br> modificaciones corporales seguras</p>
+            </div>
+        </div>
+        <div class="grid_3">
+            <div class="block_4">
+                <img src="images/tatuador2.jpg" alt="">
+                <h5><a class="link_1 animate">Iván Lozano</a></h5>
+                <p>Con experiencia en old school y neotradicional. Fundador de "En su tinta" Studio</p>
+            </div>
+        </div>
+        <div class="grid_3">
+        </div>
+    </div></hr>
+</section>
+<!--=======footer=================================-->
+<footer>
+    <div class="container_12">
+        <div class="wrapper">
+            <div class="grid_12">
+                <div class="top_arr">
+                </div>
+            </div>
+             <div class="clearfix"></div>
+            <div class="grid_12">
+            </div>
+            <div class="clearfix"></div>
+            <div class="grid_12">
+                <img src="images/nombreindex.png" alt="" class="marg_6">
+            </div>
+            <div class="clearfix"></div>
+            <div class="grid_12 marg_7">
+                <div class="grid_3 prefix_3 alpha f_left">
+                    <p class="pad_1">C/ Esperidión Porta Requesens,32<br>
+                    03206 Elche, Alicante</p>
+                </div>
+                <div class="grid_3 suffix_3 omega f_left">
+                    <p class="pad_2"><span class="width_1">+34606764713</span><br>
+                    <span class="width_1"> ensutinta@ink.com</span></p>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="grid_12">
+                    <p class="copyright"><span>Celia Carretero</span> &bull; &copy; 2025<br><a href="index-5.html" class="link_2 animate">:)</a></p>
+                    <div><!--{%FOOTER_LINK} --></div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
